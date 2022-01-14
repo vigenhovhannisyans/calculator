@@ -1,0 +1,92 @@
+body{
+    background: gray;
+}
+.calculator-block{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.phone{
+    width: 375px;
+    height: 812px;
+    border: 5px solid #F0F0F0;
+    background-color: black;
+    border-radius: 40px;
+    position: relative;
+    box-shadow: 0px 0px 13px 0px #F0F0F0;
+}
+.top-line{
+    width: 242px;
+    background-color: #F0F0F0;
+    border-radius: 0 0 16px 16px;
+    display: block;
+    position: absolute;
+    height: 30px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -407px);
+}
+.num-block{
+    width: 101%;
+    height: 423px;
+    background-color: #F0F0F0;
+    transform: translate(-1px, 374px);
+    border-radius: 0 0 30px 35px;
+    padding-top: 15px;
+}
+.num-btn{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.num-btn:hover{
+    cursor: pointer;
+}
+.top-side{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    margin-top: 15px;
+}
+.bottom{
+    justify-content: flex-end !important;
+}
+.buttons{
+    background: #F0F0F0;
+    box-shadow: -4px -4px 12px #FFFFFF, 4px 4px 12px rgba(209, 205, 199, 0.5);
+    border-radius: 50%;
+    border: none;
+    width: 65px;
+    height: 65px;
+    position: relative;
+}
+.buttons:active{
+    box-shadow: -1px 0px 7px #ffffff, 0px 0px 34px rgb(209 205 199 / 50%);
+}
+.buttons:hover{
+    cursor: pointer;
+}
+.button-num{
+    color: #808080;
+    font-size: 27px;
+}
+.buttons.zero{
+    margin-right: 29px;
+}
+.buttons.dot{
+    margin-right: 29px;
+}
+.buttons.equals{
+    margin-right: 14px;
+}
+.screen{
+    color: white;
+    position: absolute;
+    right: 0;
+    font-size: 50px;
+    transform: translate(-13px, 290px);
+    letter-spacing: 14px;
+}
