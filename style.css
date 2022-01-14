@@ -1,5 +1,9 @@
-body{
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');body{
     background: gray;
+}
+body{
+    background: rgb(0,75,106);
+background: radial-gradient(circle, rgba(0,75,106,1) 0%, rgba(0,51,71,1) 100%);
 }
 .calculator-block{
     position: absolute;
@@ -10,16 +14,16 @@ body{
 .phone{
     width: 375px;
     height: 812px;
-    border: 5px solid #F0F0F0;
-    background-color: black;
+    border: 5px solid black;
+    background-color: #F0F0F0;
     border-radius: 40px;
     position: relative;
-    box-shadow: 0px 0px 13px 0px #F0F0F0;
 }
 .top-line{
-    width: 242px;
-    background-color: #F0F0F0;
-    border-radius: 0 0 16px 16px;
+    width: 205px;
+    background-color: black;
+    border-radius: 0 0 20px 20px;
+    height: 40px;
     display: block;
     position: absolute;
     height: 30px;
@@ -27,12 +31,13 @@ body{
     left: 50%;
     transform: translate(-50%, -407px);
 }
+    
 .num-block{
-    width: 101%;
+    width: 374px;
     height: 423px;
     background-color: #F0F0F0;
-    transform: translate(-1px, 374px);
-    border-radius: 0 0 30px 35px;
+    transform: translate(0px, 173px);
+    border-radius: 0 0 35px 35px;
     padding-top: 15px;
 }
 .num-btn{
@@ -83,10 +88,64 @@ body{
     margin-right: 14px;
 }
 .screen{
-    color: white;
+    color: black;
     position: absolute;
     right: 0;
     font-size: 50px;
-    transform: translate(-13px, 290px);
+    transform: translate(-13px, 90px);
     letter-spacing: 14px;
+    font-weight: 700;
+}
+.swipe{
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 162px;
+    height: 5px;
+    border-radius: 15px;
+    background-color: black;
+    transform: translate(-110px, 1px);
+}
+.right-block{
+    display: flex;
+    align-items: baseline;
+    position: absolute;
+    right: 0;
+    transform: translate(-6px, 10px);
+}
+.right-block-top{
+    display: flex;
+    align-items: baseline;
+    position: absolute;
+    right: 0;
+    transform: translate(-14px, -174px);
+    justify-content: space-between;
+    width: 68px;
+}
+.hour-block{
+    position: absolute;
+    left: 0;
+    font-size: 14px;
+    font-family: 'Anton', sans-serif;
+    transform: translate(30px, -181px);
+}
+.phone-m{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.phone-background{
+    height: 833px;
+    background-color: #f0f0f0;
+    width: 415px;
+    position: absolute;
+    transform: translate(-24px, -196px);
+    z-index: -1;
+    border-radius: 47px;
+    box-shadow: 3px 0px 20px 2px white;
+}
+.disabledClass{
+    pointer-events: none;
+    opacity: 0.8;
 }
